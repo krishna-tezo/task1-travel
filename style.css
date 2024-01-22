@@ -132,27 +132,93 @@
     margin: 20px;
 }
 
-.category h1{
+.heading-main{
     margin: 30px;
     font-size: 50px;
     color: var(--hero-blue);
 }
 
 .category-div{
-    padding: 100px;
+    padding: 50px 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
-.category-div > div{
+.services{
     width: 300px;
     height: 300px;
-    border: 1px solid black;
 }
 
-.service-1 > img{
-    height: auto;
+.category-img-shift{
+    position: relative;
+    top: 20%;
+}
+
+.service-img-box{
+    height: 154px;
+}
+
+.category-para{
+    margin: auto;
+    margin-top: 20px;
+    color: grey;
+    text-align: justify;
+    width: 108px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* Top selling destinations */
+
+.top-selling > h3,h1{
+    margin: 10px;
+    text-align: center;
+}
+
+.top-selling-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.top-destination{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--hero-blue);
+}
+
+
+/* Next Trips */
+.next-trip{
+    display: flex;
+    margin: 20x;
+    justify-content: space-between;
+}
+.next-trip-left{
+    padding: 100px
+}
+.next-trip-left > h3{
+    text-align: left;
+    margin-left: 50px;
+} 
+
+.next-trip-right{
+    margin-right: 200px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 30px 10px 45px rgba(179, 207, 216,10);
     
 }
+.next-trip-image{
+    width:100%;
+    height:auto;
+}
 
+.next-trip-heading{
+    text-align: left;
+}

@@ -6,6 +6,10 @@
     <title>My Travel Site</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS Icons -->
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-top-right-r.css' rel='stylesheet'>
+    
   </head>
   <body>
     <!-- Navbar -->
@@ -24,89 +28,151 @@
             <a href="#">Login</a>
 
             <button class="btn-navbar btn-sign-up">Sign up</button>
-            
+
             <select name="lang" id="lang" class="btn-navbar btn-lang-drop">
               <option value="english"><a href="#">EN</a></option>
               <option value="french"><a href="#">FR</a></option>
             </select>
-
           </div>
         </div>
       </nav>
     </section>
-
-
 
     <!-- HERO -->
     <section>
       <div class="hero">
         <div class="hero-text">
           <p class="para-1">BEST DESTINATIONS AROUND THE WORLD</p>
-          
-          <p class="hero-tagline">
-            Travel,enjoy
-            and live a new
-            and full life
-          </p>
+
+          <p class="hero-tagline">Travel,enjoy and live a new and full life</p>
 
           <p class="hero-para2">
             Built wicket longer admire do barton vanity itself do in it.
-            Preferred to sportsmen it engrossed listening. Park gate
-            sell they west hard for the.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
           </p>
 
           <button class="btn-hero-find-more">Find out more</button>
-          
-          
         </div>
 
         <div class="hero-banner">
-          <img src="Assets/traveller.png" class="hero-image" alt="">
+          <img src="Assets/traveller.png" class="hero-image" alt="" />
         </div>
-
       </div>
     </section>
-    
 
     <!-- Category -->
     <section class="category">
       <h3>CATEGORY</h3>
-      <h1>We offer best services</h1>
-
+      <h1 class="heading-main">We offer best services</h1>
 
       <div class="category-div">
-        <div class="service-1">
-          <img src="Assets/weather.png" alt="">
-          <h3>Calculated Weather</h3>
-          <p>Built Wicket longer admire do barton vanity itself do in it</p>
+        <div class="services">
+          <div class="service-img-box">
+            <img src="Assets/weather.png" class="category-img-shift" alt="" />
+          </div>
+          <h2>Calculated Weather</h2>
+          <div class="category-para">The sun dipped below the horizon, casting a warm glow across the tranquil lake.</div>
         </div>
 
-        <div class="service-1">
-          <img src="Assets/flight.png" alt="">
-          <h3>Best Flights</h3>
-          <p>Engrossed listening park gate sell they west hard for the.</p>
+        <div class="services">
+          <div class="service-img-box">
+            <img src="Assets/flight.png" alt="" />
+          </div>
+          <h2>Best Flights</h2>
+          <div class="category-para">The sun dipped below the horizon, casting a warm glow across the tranquil lake.</div>
         </div>
 
-        <div class="service-1">
-          <img src="Assets/event.png" alt="">
-          <h3>Local Events</h3>
-          <p>Built Wicket longer admire do barton vanity itself do in it</p>
+        <div class="services">
+          <div class="service-img-box">
+            <img src="Assets/event.png" class="category-img-shift" alt="" />
+
+          </div>
+          <h2>Local Events</h2>
+          <div class="category-para">The sun dipped below the horizon, casting a warm glow across the tranquil lake.</div>
         </div>
 
-        <div class="service-1">
-          <img src="Assets/customization.png" alt="">
-          <h3>Customization</h3>
-          <p>
-            We deliver outsourced aviation services for military customers
-          </p>
+        <div class="services">
+          <div class="service-img-box">
+            <img src="Assets/customization.png" class=" category-img-shift" alt="" />
+
+          </div>
+          <h2>Customization</h2>
+          <div class="category-para">
+            The sun dipped below the horizon, casting a warm glow across the tranquil lake.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Selling -->
+    <section class="top-selling">
+      <h3>TOP SELLING</h3>
+      <h1 class="heading-main">Top Destinations</h1>
+
+      <div class="top-selling-div">
+        
+        <div class="destinations">
+          <img src="Assets/rome.png" class="top-destinations-img" alt="rome" />
+          
+          <div class="top-destination">
+            <div class="top-destination-name">Rome, Italy</div>
+            <div class="top-destination-price">$5,42k</div>
+          </div>
+
+          <p class="top-selling-trip-days"><i class="gg-arrow-top-right-r"></i>10 days trip</p>
         </div>
 
+        <div class="destinations">
+          <img
+            src="Assets/london.jpg"
+            class="top-destinations-img"
+            alt="europe"
+          />
+          <div class="top-destination">
+            <div class="top-destination-name">London, UK</div>
+            <div class="top-destination-price">$4.2k</div>  
+          </div>
+          
 
+          <p class="top-selling-trip-days">10 days trip</p>
+        </div>
+
+        <div class="destinations">
+          <img
+            src="Assets/europe.png"
+            class="top-destinations-img"
+            alt="rome"
+          />
+          <div class="top-destination">
+            <div class="top-destination-name">Full Europe</div>
+            <div class="top-destination-price">$15k</div>
+          </div>
+              
+          <span class="top-selling-trip-days">10 days trip</span>
+        </div>
       </div>
     </section>
 
 
-  
+
+
+    <!-- Next Trips -->
+    <section class="section3">
+      <div class="next-trip">
+        <div class="next-trip-left">
+          <h3>Easy and Fast</h3>
+
+          <h1 class="heading-main">Book your next trip in 3 easy steps</h1>
+        </div>
+
+        <div class="next-trip-right">
+
+          <img src="Assets/girl.jpg" class="next-trip-image" alt="" />
+          <h3 class="next-trip-heading">Trip to Greece</h3>
+        </div>
+      </div>
+    </section>
   </body>
 
   <script src="script.js"></script>
