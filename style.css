@@ -14,6 +14,18 @@
     font-weight: 500;
 }
 
+.head-2{
+    margin-top: 20px;
+    color: var(--hero-blue);
+    font-size: 50px;
+}
+
+.head-3{
+    margin-top: 20px;
+    color: #201c4c;
+    opacity: 75%;
+}
+
 
 .border{
     border: 1px solid black;
@@ -132,11 +144,6 @@
     margin: 20px;
 }
 
-.heading-main{
-    margin: 30px;
-    font-size: 50px;
-    color: var(--hero-blue);
-}
 
 .category-div{
     padding: 50px 200px;
@@ -173,16 +180,24 @@
 
 /* Top selling destinations */
 
-.top-selling > h3,h1{
-    margin: 10px;
+.top-selling{
     text-align: center;
 }
+
+
 
 .top-selling-div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 100px;
+}
+
+.top-selling-trip-days{
+    color: #201c4c;
+    margin: 10px;
+    text-align: left;
+    font-weight: 400;
 }
 
 .top-destination{
@@ -200,11 +215,11 @@
     justify-content: space-between;
 }
 .next-trip-left{
-    padding: 100px
+    padding-left: 100px;
+    width: 470px;
 }
 .next-trip-left > h3{
     text-align: left;
-    margin-left: 50px;
 } 
 
 .next-trip-right{
@@ -222,3 +237,91 @@
 .next-trip-heading{
     text-align: left;
 }
+
+.next-trip-left.heading-main{
+    text-align: left;
+    margin:0px;
+}
+
+.steps{
+    margin-top: 25px;
+    display: flex;
+}
+
+.step{
+    padding: 10px;
+}
+
+.steps-img{
+    padding: 12px;
+    height: 47px;
+    width: 47px;
+}
+
+.step-span{
+    color: #201c4c;
+    font-weight: 800;
+    opacity: 75%;
+}
+
+.step-para{
+    color: #201c4c;
+    font-weight: 500;
+    opacity: 75%;
+}
+
+.next-trip-date{
+    margin:15px 0px;
+    color: #201c4c;
+    opacity: 75%;
+}
+
+.next-trip-right h3{
+    color: black;
+}
+.next-trip-icons img{
+    margin:0px 10px;
+}
+
+.next-trip-house-img{
+    margin-top: 10px;
+}
+
+/* Connect page */
+.connect{
+    background-color: #fff4fc;
+    margin: 100px 200px;
+    padding: 50px 200px;
+    border-top-left-radius: 75px;
+    background-image: url("Assets/Group\ 42.png");
+    background-repeat: no-repeat;
+    background: size 40px;
+}
+
+.connect-heading{
+    color: #201c4c;
+    opacity: 75%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.connect-form{
+    text-align: center;
+    margin: 40px;
+}
+
+.connect-input-email{
+    height:35px;
+    width: 300px;
+}
+
+.connect-btn{
+    background-color: #ff926d;
+    border: none;
+    color: white;
+    padding: 13px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
