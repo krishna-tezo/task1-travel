@@ -77,7 +77,7 @@
 
 /* For Smartphones in Portrait mode */
 @media only screen and (max-width: 599px) {
-    .navbar-main-menu{
+    .navbar-div{
         flex-direction: column;
     }
 }
@@ -177,6 +177,11 @@
     font-weight: 500;
 }
 
+.services:hover{
+    border-radius: 5px;
+    box-shadow: 30px 10px 45px rgba(179, 207, 216,10);
+}
+
 
 /* Top selling destinations */
 
@@ -207,6 +212,10 @@
     color: var(--hero-blue);
 }
 
+.destinations:hover{
+    border-radius: 25px;
+    box-shadow: 20px 10px 30px rgba(179, 207, 216,10);;
+}
 
 /* Next Trips */
 .next-trip{
@@ -325,3 +334,70 @@
     
 }
 
+/* Footer */
+
+.footer{
+    display: flex;
+    margin: 40px 20px;
+    justify-content: center;
+}
+
+.footer div{
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-banner{
+    width: 300px;
+}
+
+.footer-banner-head{
+    color: #201c4c;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.footer-banner-para{
+    color: #201c4c;
+    opacity: 75%;
+}
+
+.footer-menu-head{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.menu p{
+    margin: 10px 0px;
+    color: #201c4c;
+    opacity: 75%;
+
+}
+
+.footer-links-icons img{
+    margin-right: 15px;
+    height: 36px;
+    width: 36px;
+}
+
+.footer-links-para{
+    color: #201c4c;
+    opacity: 75%;
+    margin-left: 30px;
+}
+
+.footer-lnks-img{
+    height: 40px;
+    margin:5px 25px;
+}
+
+.copyright{
+    text-align: center;
+    color: #201c4c;
+    opacity: 75%;
+    margin: 30px;
+}
