@@ -139,6 +139,7 @@
     color: white;
     border: none;
     border-radius: 5px;
+    box-shadow : 0px 10px 20px rgba(241, 165, 1, 0.3);
 }
 
 .btn-hero-find-more:hover{
@@ -209,7 +210,7 @@
 
 .services{
     width: 300px;
-    height: 300px;
+    height: 350px;
 }
 
 .category-img-shift{
@@ -232,8 +233,8 @@
 }
 
 .services:hover{
-    border-radius: 5px;
-    box-shadow: 30px 10px 45px rgba(179, 207, 216,10);
+    border-radius: 25px;
+    box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2); 
 }
 
 @media only screen and (max-width: 599px) {
@@ -273,9 +274,9 @@
     color: var(--hero-blue);
 }
 
-.destinations:hover{
+.destinations{
     border-radius: 25px;
-    box-shadow: 20px 10px 30px rgba(179, 207, 216,10);;
+    box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 599px) {
@@ -306,7 +307,7 @@
     margin-right: 200px;
     padding: 30px;
     border-radius: 30px;
-    box-shadow: 30px 10px 45px rgba(179, 207, 216,10);
+    box-shadow: 30px -20px 75px 25px rgba(179, 207, 216,0.5);
     
 }
 .next-trip-image{
@@ -367,6 +368,20 @@
     margin-top: 10px;
 }
 
+.next-trip-img-container{
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.next-trip-ongoing-img{
+    width: 260px;
+    position:absolute;
+    top: -130px;
+    right: -442px;
+    border-radius: 10px;
+}
+
 
 @media only screen and (max-width: 599px) {
     .next-trip{
@@ -389,9 +404,6 @@
     margin: 100px 200px;
     padding: 50px 200px;
     border-top-left-radius: 75px;
-    background-image: url("Assets/Group\ 42.png");
-    background-repeat: no-repeat;
-    background: size 40px;
 }
 
 .connect-heading{
@@ -407,6 +419,12 @@
 }
 
 .connect-input-email{
+    position: relative;
+    z-index: 5;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
     height:35px;
     width: 300px;
 }
@@ -415,11 +433,40 @@
     background-color: #ff926d;
     border: none;
     color: white;
-    padding: 13px;
+    width: 120px;
+    padding: 16px;
     margin: 20px;
     border-radius: 10px;
-    
 }
+
+.connect > div{
+    z-index: 2;
+}
+
+.connect-page-img{
+    position: relative;
+    top: -84px;
+    right: -883px;
+}
+
+.connect-img-container{
+    position: relative;
+    width: 0;
+    height: 0;
+    
+  }      
+  .connect-bg-img {
+    position: absolute;
+    right: -175px;
+    bottom: -50px;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  .connect-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
 
 @media only screen and (max-width: 599px) {
     .connect{
