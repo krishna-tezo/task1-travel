@@ -12,15 +12,17 @@
     margin: 0px;
     color: black;
     font-weight: 500;
+    text-decoration: none;
 }
 
 section{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 .head-2{
-    margin-top: 20px;
+    margin-top: 1.25rem;
     color: var(--hero-blue);
     font-size: 50px;
     text-align: center;
@@ -44,10 +46,10 @@ section{
     margin: 10px 80px;
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 
 .navbar-logo{
-    margin-top:10px;
     margin-left: 50px;
 }
 
@@ -108,15 +110,14 @@ section{
 .hero{
     margin:20px 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-.hero-text { 
+.hero-left { 
     height: 600px;
     width: 40%;
 }
-.hero-text > p{
+.hero-left > p{
     margin: 30px;
 }
 
@@ -154,7 +155,7 @@ section{
 }
 
 
-.hero-banner { 
+.hero-right { 
     width: 40%;
     margin-top: 10px;
     scale: 1.2;
@@ -211,6 +212,14 @@ section{
     align-items: center;
 }
 
+.category-plus-img-container{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    /* top: 1rem; */
+    left: 84rem;
+}
+
 
 .services{
     width: 300px;
@@ -263,11 +272,14 @@ section{
 
 /* Top selling destinations */
 
+.top-selling{
+    margin-top: 100px;
+}
 .top-selling-div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 80px 100px;
+    padding: 30px 100px;
 }
 
 .top-selling.head-3{
@@ -377,7 +389,7 @@ section{
     top: -167px;
     right: -480px;
     border-radius: 20px;
-    box-shadow: 30px -20px 75px 25px rgba(179, 207, 216,0.5);
+    box-shadow: 30px -20px 75px 25px rgba(179, 207, 216,0.1);
 }
 
 .ongoing-div-right{
@@ -452,23 +464,23 @@ section{
     text-align: left;
 }
 .next-trip-icons img{
-    margin:0px 10px;
+    margin-right: 10px;
 }
 
 .next-trip-right-bottom{
     display: flex;
     margin: 10px 0px;
-    padding: 0px 20px;
 }
 
 .next-trip-house-img{
     margin-top: 10px;
+    scale: 0.8;
 }
 
 
 .next-trip-bottom-para{
-    margin-top: 15px;
-    margin-left: 12px;
+    margin-top: 18px;
+    margin-left: 6px;
 }
 
 .next-trip-img-container{
@@ -504,9 +516,11 @@ section{
 /* Connect page */
 .connect{
     background-color: rgb(249, 247, 254);
-    margin: 100px 200px;
+    margin: 100px 160px;
     padding: 20px 100px;
     border-top-left-radius: 75px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .connect-heading{
@@ -517,18 +531,28 @@ section{
 }
 
 .connect-form{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 40px;
 }
+.connect-form-box{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
 
 .connect-input-email{
     position: relative;
     z-index: 5;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: white;
-    height:35px;
+    border-radius: 8px;
+    padding: 10px;  
+    height:24px;
     width: 300px;
 }
 
@@ -549,7 +573,7 @@ section{
 .connect-page-img{
     position: relative;
     top: -54px;
-    right: -944px;
+    right: -1023px;
 }
 
 .connect-img-container{
@@ -565,13 +589,25 @@ section{
     scale: 0.8;
   }
 
+  .connect-plus-img-container{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    left: 21rem;
+    
+  }
+
+  .connect-plus-img-container-img{
+    transform: rotate(90deg);
+  }
+
   #img-1{
-    right: -237px;
+    right: -250px;
     bottom: -48px;
   }
 
   #img-2{
-    right: -1053px;
+    right: -1133px;
     top: -324px;
     transform: rotate(270deg);
   }
@@ -605,22 +641,15 @@ section{
 
 .footer{
     display: flex;
-    margin: 40px 20px;
-    justify-content: center;
+    margin: 180px 120px 60px 120px;
 }
 
-.footer div{
-    margin: 5px 20px;
-    padding: 10px;
-}
-
-.footer-menu{
-    display: flex;
-    justify-content: space-between;
+.footer > div{
+    margin: 5px 40px;
 }
 
 .footer-banner{
-    width: 300px;
+    width: 17.5rem;
 }
 
 .footer-banner-head{
@@ -629,9 +658,6 @@ section{
     margin-bottom: 20px;
 }
 
-.footer-banner-para{
-    padding-right: 25px;
-}
 
 .footer-menu-head{
     font-weight: 900;
@@ -645,6 +671,10 @@ section{
 
 }
 
+.footer-links-icons{
+    margin: 0px !important;
+}
+
 .footer-links-icons img{
     margin-right: 15px;
     height: 36px;
@@ -653,18 +683,17 @@ section{
 }
 
 .footer-links-para{
-    margin-left: 30px;
     margin-bottom: 15px;
 }
 
 .footer-lnks-img{
     height: 40px;
-    margin:5px 25px;
+    margin:5px 0px
 }
 
 .copyright{
     text-align: center;
-    margin: 70px;
+    margin: 2rem;
 }
 
 /* @media only screen and (max-width: 599px) {
