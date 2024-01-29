@@ -6,32 +6,40 @@
     <title>My Travel Site</title>
 
     <link rel="stylesheet" href="style.css" />
+
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-round.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrows-scroll-h.css' rel='stylesheet'>
   </head>
   <body>
     <div class="main">
+
+      
       <!-- Navbar -->
-      <section>
-        <nav>
-          <div class="navbar-div flex-centred-aligned">
-            <img src="./assets/decore.png" class="navbar-logo" alt="logo" />
-
-            <div class="navbar-main-menu flex-aligned">
-              <a href="#">Destinations</a>
-              <a href="#">Hotels</a>
-              <a href="#">Flights</a>
-              <a href="#">Bookings</a>
-              <a href="#">Login</a>
-
-              <button class="btn-navbar btn-sign-up">Sign up</button>
-
-              <select name="lang" id="lang" class="btn-navbar btn-lang-drop">
-                <option value="english"><a href="#">EN</a></option>
-                <option value="french"><a href="#">FR</a></option>
-              </select>
-            </div>
-          </div>
+      
+      <header class="header">
+        <img src="Assets/decore.png" class="header-logo" alt="logo" />
+  
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons">
+          <i class="gg-menu-round" id="menu-icon"></i>
+          <i class="gg-arrows-scroll-h" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+          <a href="#">Destinations</a>
+          <a href="#">Hotels</a>
+          <a href="#">Flights</a>
+          <a href="#">Bookings</a>
+          <a href="#">Login</a>
+  
+          <button class="btn-navbar btn-sign-up">Sign up</button>
+  
+          <select name="lang" id="lang" class="btn-navbar btn-lang-drop">
+            <option value="english"><a href="#">EN</a></option>
+            <option value="french"><a href="#">FR</a></option>
+          </select>
         </nav>
-      </section>
+      </header>
 
       <!-- HERO -->
       <section>
@@ -243,7 +251,7 @@
               class="next-trip-image"
               alt="girl vacation"
             />
-            <p class="section-title">Trip to Greece</p>
+            <p class="next-trip-card-title">Trip to Greece</p>
             <p class="next-trip-date less-opacity-blue">
               14-29 June | by Robbin Joseph
             </p>
@@ -290,32 +298,41 @@
           </div>
         </div>
       </section>
-
+      
+      
       <!-- Connect Page -->
-      <!-- <section>
+      <section>
         <div class="connect">
-          <div class="connect-heading less-opacity-blue">
-            Subscribe to get information, latest news and other interesting
-            offers about Cobham
-          </div>
+          
+          <img
+          src="assets/plus.png"
+          id="connect-bg-img-plus"
+          alt=""
+        />
 
-          <div class="connect-form">
-            <div class="connect-form-box">
-              <img
-                src="assets/drop-email.png"
-                class="connect-form-mail"
-                alt="email"
-              />
-              <input
-                type="email"
-                class="connect-input-email"
-                placeholder="Your email"
-              />
+          <div class="connect-content">
+            <div class="connect-heading less-opacity-blue">
+              Subscribe to get information, latest news and other interesting
+              offers about Cobham
             </div>
 
-            <button class="connect-btn">Subscribe</button>
-          </div>
+            <div class="connect-form">
+              <div class="connect-form-box">
+                <img
+                  src="assets/drop-email.png"
+                  class="connect-form-mail"
+                  alt="email"
+                />
+                <input
+                  type="email"
+                  class="connect-input-email"
+                  placeholder="Your email"
+                />
+              </div>
 
+              <button class="connect-btn">Subscribe</button>
+            </div>
+          </div>
 
           <img
             src="assets/group42.png"
@@ -337,45 +354,40 @@
             id="connect-bg-img-redirect"
             alt="redirect"
           />
-
-          <img
-            src="assets/plus.png"
-            class="connect-bg-img"
-            id="connect-bg-img-plus"
-            alt=""
-          />
         </div>
-      </section> -->
+      </section>
 
       <!-- Footer -->
-      <!-- <section>
+      <section>
         <div class="footer">
           <div class="footer-banner">
             <p class="footer-banner-head">TravelPro</p>
-            <p class="less-opacity-blue">
+            <p class="footer-banner-desc less-opacity-blue">
               Book our trip in minute, get full Control for much longer
             </p>
           </div>
 
-          <div class="menu">
-            <p class="footer-menu-head">Company</p>
-            <p>About</p>
-            <p>Career</p>
-            <p>Mobile</p>
-          </div>
+          <div class="footer-main-menu">
+            <div class="menu">
+              <p class="footer-menu-head">Company</p>
+              <p>About</p>
+              <p>Career</p>
+              <p>Mobile</p>
+            </div>
 
-          <div class="menu">
-            <p class="footer-menu-head">Contact</p>
-            <p>Help/FAQ</p>
-            <p>Press</p>
-            <p>Affliates</p>
-          </div>
+            <div class="menu">
+              <p class="footer-menu-head">Contact</p>
+              <p>Help/FAQ</p>
+              <p>Press</p>
+              <p>Affliates</p>
+            </div>
 
-          <div class="menu">
-            <p class="footer-menu-head">More</p>
-            <p>Airlinefees</p>
-            <p>Airline</p>
-            <p>Low fare tips</p>
+            <div class="menu">
+              <p class="footer-menu-head">More</p>
+              <p>Airlinefees</p>
+              <p>Airline</p>
+              <p>Low fare tips</p>
+            </div>
           </div>
 
           <div class="footer-links">
@@ -393,7 +405,7 @@
         <div class="copyright less-opacity-blue">
           All rights reserved @travelpro.com
         </div>
-      </section> -->
+      </section>
     </div>
   </body>
 
